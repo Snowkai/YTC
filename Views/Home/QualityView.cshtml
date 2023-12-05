@@ -1,0 +1,25 @@
+﻿@model Dictionary<int, string>
+<div id="file-info">
+    <h1>
+        @ViewBag.Title;
+    </h1>
+    <h1>
+        @ViewBag.Author;
+    </h1>
+</div>
+<div id="choose-quality">
+    <form method="post" asp-controller="Home" asp-action="ProgressDownload">
+        <table>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="radio" name="code" value="@item.Key" />
+                        <label>@item.Value</label>
+                    </td>
+                </tr>
+            }
+        </table>
+        <input type="submit" value="PrepareFile" />
+    </form>
+</div>

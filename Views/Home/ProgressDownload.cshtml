@@ -1,0 +1,23 @@
+﻿@model YouTubeVideo
+<div id="title">
+    @ViewBag.Title
+</div>
+<div id="info">
+    <h1>@ViewBag.totalbytes</h1>
+    <div id="progress-info"></div>
+</div>
+<div id="download-btn">
+    <form method="post" asp-controller="Home" asp-action="DownloadFile">
+        <input type="submit" id="btn-download" value="Download" hidden />
+    </form>
+</div>
+<script src="~/js/progress.js"></script>
+<script>
+    var total = @ViewBag.totalbytes;
+    setInterval(() => {
+        var currentread = document.getElementById('progress-info').innerText;
+        if (currentread == total) {
+            document.getElementById('btn-download').hidden = false;
+        }
+    }, 2000);
+</script>
