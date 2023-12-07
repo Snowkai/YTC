@@ -1,5 +1,6 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:#e7e5e5
+}
+.main-body{
+    background-color:aqua
 }
