@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
 </head>
 <body>
+    <div class="main-block">
+    <div id="logo-title" class="logo-title">
+        <h1>YTConverter</h1>
+    </div>
     <div id="get-url-youtube">
         <form method="post" asp-controller="Home" asp-action="QualityView">
             <input type="text" name="url" />
@@ -18,6 +22,7 @@
     </div>
     <div id="main-body">
         @RenderBody()
+    </div>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
