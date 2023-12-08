@@ -1,13 +1,13 @@
 ﻿@model Dictionary<int, string>
 <div id="file-info">
     <h1>
-        @ViewBag.Title;
+        Title: @ViewBag.Title
     </h1>
     <h1>
-        @ViewBag.Author;
+        Author: @ViewBag.Author
     </h1>
 </div>
-<div id="choose-quality">
+<div id="choose-quality" class="quality-v">
     <form method="post" asp-controller="Home" asp-action="ProgressDownload">
         <table>
             @foreach(var item in Model)
