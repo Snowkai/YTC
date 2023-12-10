@@ -2,6 +2,7 @@
 <div id="title">
     @ViewBag.Title
 </div>
+<div class="progress-bar">
 <div id="info">
     <h1>@ViewBag.totalbytes</h1>
     <div id="progress-info"></div>
@@ -10,6 +11,7 @@
     <form method="post" asp-controller="Home" asp-action="DownloadFile">
         <input type="submit" id="btn-download" value="Download" hidden />
     </form>
+</div>
 </div>
 <script src="~/js/progress.js"></script>
 <script>
