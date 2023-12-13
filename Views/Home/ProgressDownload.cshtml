@@ -6,8 +6,10 @@
 </div>
 <div class="prog-bar">
 <div id="info">
-    Total Bytes: @ViewBag.totalbytes
-    <span>Downloaded bytes: <div id="progress-info" class="p-info"></div></span>
+    Total Bytes:
+    <div>@ViewBag.totalbytes</div>
+    Downloaded bytes: 
+    <div id="progress-info" class="p-info"></div>
 </div>
 <div id="download-btn">
     <form method="post" asp-controller="Home" asp-action="DownloadFile">
@@ -18,6 +20,7 @@
 <script src="~/js/progress.js"></script>
 <script>
     var total = @ViewBag.totalbytes;
+
     setInterval(() => {
         var currentread = document.getElementById('progress-info').innerText;
         if (currentread == total) {
