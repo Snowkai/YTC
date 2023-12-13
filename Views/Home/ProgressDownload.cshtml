@@ -1,11 +1,13 @@
 ﻿@model YouTubeVideo
+<div class="progress-title">
 <div id="title">
-    @ViewBag.Title
+    <p>@ViewBag.Title</p>
 </div>
-<div class="progress-bar">
+</div>
+<div class="prog-bar">
 <div id="info">
-    <h1>@ViewBag.totalbytes</h1>
-    <div id="progress-info"></div>
+    Total Bytes: @ViewBag.totalbytes
+    <span>Downloaded bytes: <div id="progress-info" class="p-info"></div></span>
 </div>
 <div id="download-btn">
     <form method="post" asp-controller="Home" asp-action="DownloadFile">

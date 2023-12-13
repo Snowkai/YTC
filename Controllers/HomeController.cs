@@ -65,6 +65,7 @@ namespace YTC.Controllers
             StaticData.VideoFile = video;
             StaticData.PathFile = path;
             StaticData.PrepareFile(path, video);
+            ViewBag.Title = videoInfos.First().Info.Title;
             ViewBag.totalbytes = StaticData.TotalBytes;
             return View("ProgressDownload");
         }
