@@ -1,4 +1,4 @@
-Этот сайт создавался в целях обучения с ASP.NET Core MVC и SignalR
-Сайт не предназначался для коммерческого использования. В связи с чем сайт имеет ряд багов.
-- Технический внешний вид.
-- Библиотека VideoLibrary для скачивания файлов с YouTube, видимо давно не поддерживается создателем и поэтому переодичски могут возникать проблемы со скачиванием определённых вариантов качества.
+This site was created for training purposes with ASP.NET Core MVC and SignalR
+The site was not intended for commercial use. As a result, the site has a number of bugs.
+- Technical appearance.
+- The VideoLibrary library for downloading files from YouTube apparently has not been supported by the creator for a long time and therefore problems may occasionally arise with downloading certain quality options.
